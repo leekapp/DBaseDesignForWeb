@@ -4,5 +4,5 @@
 
 Laboratory Ordering Database:<https://lkapp.w3.uvm.edu/cs148/live-final>
 
-Please click "view on GitHub" to review the code in the original files.
+Please click "View the Project on GitHub" to review the code in the original files.
 
