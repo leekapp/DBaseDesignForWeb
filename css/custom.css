@@ -1,0 +1,451 @@
+/*
+Lee Kapp - CS148 Assignment 2 - custom.css
+*/
+
+:root {
+   --header-color: rgb(223,82,134);
+   --main-color: black;
+   --text-color: darkslateblue;
+   --list-font: palatino, georgia, andale mono;
+   --textstyle: baskerville, courier, andale mono;
+   --main-bg-color: oldlace;
+    font-size: 18px;
+}
+
+
+html {
+    display: block;
+}
+
+
+html ul {
+    font-size: 1rem;
+    font-family: var(--textstyle);
+    color: var(--text-color);
+    background-color: var(--main-bg-color);
+}
+
+body{
+    border: thin solid var(--main-color);
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    max-width: 50em;
+    line-height: 1.3em;
+    padding: 1%;
+    margin: auto;
+}
+
+h1 {
+    font-family: var(--textstyle);
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-family: var(--textstyle);
+    color:var(--text-color);
+    font-size: 1.75rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h3 {
+    font-family: var(--textstyle);
+    color:var(--text-color);
+    font-size: 1rem;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+h4 {
+    font-family: var(--textstyle);
+    color: var(--text-color);
+    font-size: 0.75rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+p {
+    text-indent: 2.5rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-left:auto;
+    margin-right:auto;
+    max-width:95%;
+}
+
+
+nav {
+    margin:0;
+    text-align: center;
+    font-family: Georgia;
+    font-size: large;
+    list-style-type: none;
+    color: var(--text-color);
+    background-color: navy;
+    max-width: 100%;
+}
+
+.dropdown {
+    margin:auto;
+    text-align: center;
+    list-style-type: none;
+    font-family: var(--textstyle);
+    color: var(--text-color);
+}
+
+nav a {
+    display: inline-block;
+    position: center;
+    padding: 0 1em;
+}
+
+nav a:link {
+    color: cyan;
+}
+
+nav a:visited {
+    color:orangered;
+}
+
+nav a:hover, dropdown:hover, .dropbtn {
+    background-color: lightsteelblue;
+}
+
+.activePage {
+    color: hotpink;
+    /*border: solid hotpink;*/
+    background-color: white;
+}
+
+a:link {
+    color: dodgerblue;
+}
+
+a:visited {
+    color:orangered;
+}
+
+
+legend {
+    font-family: var(--textstyle);
+    color: var(--text-color);
+}
+
+img {
+    max-width:100%;
+    border: solid slategray;
+    border-radius: .5rem;
+    margin-left:.5rem;
+    margin-right:.5rem;
+    background-color: floralwhite;
+}
+
+img:hover {
+    opacity: 60%;
+}
+
+figure {
+    max-width:100%;
+    padding: 1rem;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+figcaption {
+    font-family: var(--textstyle);
+    color:var(--text-color);
+    font-size:1.5rem;
+    display:inline-block;
+    max-width: 95%;
+    text-align: left;
+}
+
+footer {
+    color:var(--text-color);
+    margin-top:2em;
+}
+
+/* grid setup */
+body{
+    display: grid;
+    grid-template-areas: "nav" "header" "main" "footer";
+}
+
+header{
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+    position: sticky;
+    top: 0;
+    max-width: 100%;
+}
+
+#indexpage {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+}
+
+#itempage {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+}
+
+#itempage figure {
+    max-width:75%;
+    padding: 1rem;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+#itempage figcaption {
+    font-family: var(--textstyle);
+    color:var(--text-color);
+    font-size:1rem;
+    display:inline-block;
+    margin: 1rem;
+    max-width: 100%;
+    text-align: left;
+}
+
+#itempage img {
+    max-width:75%;
+    padding: .5rem;
+    display:block;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+
+a button {
+    width: 11rem;
+    height: 3rem;
+    color: whitesmoke;
+    background-color: red;
+    font-size: 1.3rem;
+    border: black;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding-left: 10px;
+    margin: 10px;
+}
+
+a button:hover {
+    background-color: dodgerblue;
+    width: 11rem;
+    height: 3rem;
+}
+
+#delBtn {
+    width: 7rem;
+    height: 2.5rem;
+    color: whitesmoke;
+    background-color: red;
+    font-size: 0.75rem;
+    text-align: center;
+    border: black;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+#upBtn {
+    width: 7rem;
+    height: 2.5rem;
+    color: whitesmoke;
+    background-color: steelblue;
+    font-size: 0.75rem;
+    text-align: center;
+    border: black;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+#delBtn:hover, #upBtn:hover {
+    background-color: dodgerblue;
+}
+
+input[type=submit] {
+    width: 10rem;
+    height: 3rem;
+    color: white;
+    font-size: 1.1rem;
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: width 1s, height 1s;
+
+}
+
+input[type=submit]:hover {
+    background-color: dodgerblue;
+    width: 10rem;
+    height: 3rem;
+}
+
+input[type=textarea]:focus, input[type=email]:focus {
+    background-color:lightblue;
+    width: auto;
+}
+
+input[type=radio], input[type=checkbox] {
+    height:2rem;
+    width:2rem;
+    alignment-baseline: bottom;
+}
+
+input[type=radio] + label, input[type=checkbox] + label {
+    cursor:pointer;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/*W3 School's drop down list tutorial*/
+
+.dropdown {
+    margin:auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.dropbtn {
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* dropdown items hover - change background colour */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-button {
+    background-color: #492FA1; /* button hover - change background colour */
+}
+
+#datadict {
+    border: solid slateblue;
+    padding:.4rem;
+    margin-top:.5em;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:100%
+}
+
+#datadict tr:nth-child(odd) {
+    background-color: whitesmoke;
+    border-collapse: collapse;
+}
+#datadict tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+#datadict tr:nth-child(odd):hover {
+    background-color:lightgoldenrodyellow;
+}
+
+#datadict tr:nth-child(even):hover {
+    background-color:lightsteelblue;
+}
+
+#selectTable fieldset {
+    font-size: 1.5rem;
+}
+
+form legend {
+    display: inline-block;
+    float: left;
+    clear: left;
+    text-align: left;
+}
+
+#deletePage p {
+    text-align: left;
+    text-indent: 0;
+}
+
+#modifyOptions p {
+    text-align: left;
+    text-indent: 0;
+}
+
+#catDisp {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+}
+
+#catDisp p {
+    text-align: left;
+    text-indent: 0;
+}
+
+#catDisp figure {
+    max-width:75%;
+    padding: 1rem;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+#catDisp figcaption {
+    font-family: var(--textstyle);
+    color:var(--text-color);
+    font-size:1rem;
+    display:inline-block;
+    margin: 1rem;
+    max-width: 100%;
+    text-align: left;
+}
+
+#catDisp img {
+    max-width:75%;
+    padding: .5rem;
+    display:block;
+    margin-left: 0;
+    margin-right: auto;
+}

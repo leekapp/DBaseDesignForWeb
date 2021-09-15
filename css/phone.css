@@ -1,0 +1,14 @@
+/* Lee Kapp - CS148 Assignment 1 - phone.css */
+
+nav a{
+    display: block;
+    padding: .5%;
+}
+
+nav {
+    text-align: left;
+}
+
+h1, h2{
+    font-size: large;
+}
